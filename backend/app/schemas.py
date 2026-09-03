@@ -3,7 +3,7 @@ from typing import Literal
 from pydantic import BaseModel, Field
 
 ChallengeType = Literal["blink", "turn_head", "say_digits"]
-HeadDirection = Literal["left", "right"]
+HeadDirection = Literal["left", "right", "up", "down"]
 RiskLevel = Literal["low", "medium", "high"]
 
 
