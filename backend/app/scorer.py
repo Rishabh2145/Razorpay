@@ -117,9 +117,9 @@ def score_session(
             )
     else:
         antispoof_risk = int(round(spoof_mean * 30))
-        if spoof_mean >= 0.55:
+        if spoof_mean >= 0.25:
             reasons.append("Anti-spoof model: likely print or replay.")
-        elif spoof_mean <= 0.25:
+        elif spoof_mean <= 0.15:
             reasons.append("Anti-spoof model: consistent with a live face.")
         else:
             reasons.append("Anti-spoof model: uncertain print/replay probability.")
