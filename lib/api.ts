@@ -1,7 +1,7 @@
 import type { CompletePayload, SessionResult, SessionStart } from "./types";
 
 const API_BASE =
-  'https://razorpay-kyc-risk-analyser.onrender.com'
+  process.env.API_URL
   // process.env.NEXT_PUBLIC_API_URL?.replace(/\/$/, "") || "http://localhost:8000";
 
 async function parseError(res: Response): Promise<string> {
