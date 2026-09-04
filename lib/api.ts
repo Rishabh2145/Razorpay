@@ -1,7 +1,7 @@
 import type { CompletePayload, SessionResult, SessionStart } from "./types";
 
 const API_BASE =
-  process.env.NEXT_PUBLIC_API_URL;
+  process.env.API_URL;
   // process.env.NEXT_PUBLIC_API_URL?.replace(/\/$/, "") || "http://localhost:8000";
 
 async function parseError(res: Response): Promise<string> {
